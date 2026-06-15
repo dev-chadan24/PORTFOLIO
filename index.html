@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta -->
+    <title>Chandan Mahapatra — Full-Stack Developer & UI/UX Engineer</title>
+    <meta name="description" content="Chandan Mahapatra is a Full-Stack Developer & UI/UX Engineer specializing in Python, React, REST APIs, SQL, and accessible interface design. Currently pursuing MCA — open to internships." />
+    <meta name="author" content="Chandan Mahapatra" />
+    <meta name="keywords" content="Chandan Mahapatra, Full-Stack Developer, React Developer, Python, UI UX Designer, MCA, Bhubaneswar, Odisha, Portfolio" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chandan Mahapatra — Full-Stack Developer & UI/UX Engineer" />
+    <meta property="og:description" content="Full-Stack Developer specializing in Python, React, UI/UX, APIs, and SQL. Open to 45–60 day internships." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Theme color — matches dark canvas -->
+    <meta name="theme-color" content="#0e0e14" id="meta-theme-color" />
+
+    <!-- Favicon — lightning bolt -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+    <!-- Preconnect to Google Fonts for all font families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Inter (body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <!-- DM Serif Display (hero name) -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+    <!-- Playfair Display (editorial headings) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet" />
+    <!-- Space Grotesk (UI labels, buttons) -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- JetBrains Mono (code, footer, timestamps) -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <!-- Inline: apply stored theme before first paint to avoid flash -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var isDark = stored ? stored === 'dark' : prefersDark;
+          document.documentElement.classList.toggle('dark', isDark);
+          document.documentElement.classList.toggle('light', !isDark);
+          var themeColor = isDark ? '#0e0e14' : '#edf0f7';
+          var metaTag = document.getElementById('meta-theme-color');
+          if (metaTag) metaTag.setAttribute('content', themeColor);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
